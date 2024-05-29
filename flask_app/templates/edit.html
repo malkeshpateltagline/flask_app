@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            Add Profile
+        </title>
+    </head>
+    <body>
+        <h3>
+            Profile Form
+        </h3>
+        <form action='/update/{{ profiles.id }}' method='POST'>
+            <label>
+                First Name
+            </label>
+            <input type='text' name='first_name' value='{{profiles.first_name}}' placeholder='first name...'>
+            <label>
+                Last Name
+            </label>
+            <input type='text' name='last_name' value='{{profiles.last_name}}' placeholder='last name...'>
+            <label>
+                Age
+            </label>
+            <input type='number' name='age' value='{{profiles.age}}' placeholder='age...'>
+            <label>
+                Department
+            </label>
+            <input type='text' name='department' value='{{profiles.dep}}' placeholder='department..'>
+            <button type='submit'>Update</button>
+        </form>
+    </body>
+</html>
